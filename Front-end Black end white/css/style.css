@@ -1,0 +1,454 @@
+@font-face {
+    font-family: "Caveirada"; /* Гарнитура шрифта */
+    src: url("../font/vtks caveirada.ttf");
+   }
+body{
+	position: relative;
+	width: auto;
+	font-size: 12px;
+	color: white;
+	font-family: Garamond, arial;
+	background-image: url("../images/fon.png");
+	/* Центрирование изображения по вертикали и горизонтали всегда */
+    background-position: center center;
+ 
+    /* Запрещаем повтор изображения */
+    background-repeat: no-repeat;
+ 
+    /* Фиксируем изображение - оно остается на месте при прокрутке окна */
+    background-attachment: fixed;
+ 
+    /* Изображение будет масштабироваться в зависимости от размеров контейнера */
+    background-size: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+header{
+	width: auto;
+	background-image: url("../images/header.png");
+	height: 193px;
+}
+.header{
+	position: relative;
+	height: auto;
+	margin: 0 auto;
+	width: 950px;
+}
+.header img{
+	width: 100px;
+	height: 100px;
+}
+.header p{
+	margin: 0px;
+	font-size: 30px;
+}
+.header ul{
+	position: absolute;
+	right: 0;
+	top:  90px;
+	list-style: none;
+}
+.header li{
+	display: inline-block;
+}
+.header a{
+	font-family: "Caveirada";
+	color: white;
+	text-decoration: none;
+}
+.header .wrap{
+	width: 113px;
+	height: 20px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin-top: 10px;
+	border: none;
+	padding: 0px;
+	cursor: pointer;
+	background: black;
+}
+.header a img{
+	margin-right: 5px;
+	float: left;
+	width: 12px;
+	height: 12px;
+}
+.header .btn{
+	margin-left: 5px;
+	font-family: Garamond;
+	display: inline-block;
+	font-size: 14px;
+	text-decoration: none;
+}
+.header .btn-login{
+	color: white;
+}
+/* модальные окна*/
+.modal:before,
+.modal-2:before{
+	content: "";
+	display: none;
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+.modal:target:before,
+.modal-2:target:before{
+	display: block;
+}
+.modal-window,
+.modal-window-2{
+	background-image: url("../images/content-fon.png");
+	background-position: center center;
+	border: #333 solid 1px;
+	margin-left: -200px;
+	position: fixed;
+	left: 50%;
+	top: -100%;
+	z-index: 11;
+	width: 380px;
+	height: 300px;
+	-webkit-transform: translate(0, -500%);
+	-ms-transform: translate(0, -500%);
+	transform: translate(0, -500%);
+	-webkit-transition: -webkit-transform 0.3s ease-out;
+	-moz-transition: -moz-transform 0.3s ease-out;
+	-o-transition: -o-transform 0.3s ease-out;
+	transition: transform 0.3s ease-out;
+}
+.modal:target .modal-window,
+.modal-2:target .modal-window-2{
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	top: 20%;
+}
+.btn-close{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 0px;
+	top: 0;
+}
+/*добавляем, чтобы остановить прокручивание вверх*/
+#close {
+	display: none;
+}
+.modal a img,
+.modal-2 a img{
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+}
+.singin,
+.singup{
+	color: black;
+	text-align: center;
+	margin:  30px auto 0px auto;
+	width: 300px;
+	height: 260px;
+}
+.singin a{
+	color: black;
+	font-family: Garamond;
+	text-decoration: underline;
+}
+.button{
+	padding: auto;
+	border:2px solid #8e0a13;
+	background: #8e0a13;
+	color: white;
+}
+/* Конец модального окна*/
+
+.header a:hover,
+.content label:hover,
+.footer a:hover{
+	color: #dbc3a9;
+}
+.center{
+	position: relative;
+	margin: 0 auto;
+	width: 950px;
+	margin-top: 122px;
+}
+.content div{
+	width: 660px;
+	height: 925px;
+	background: white;
+	background-image: url("../images/content-fon.png") no-repeat;
+	background-size: 100%;
+	color: black;
+}
+.content label{
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	background: url("../images/tab.png") no-repeat;
+	line-height: 40px;
+	cursor: pointer;
+	position: relative;
+	text-align: center;
+}
+.content > input:nth-of-type(1):checked ~ label:nth-of-type(1),
+.content > input:nth-of-type(2):checked ~ label:nth-of-type(2),
+.content > input:nth-of-type(3):checked ~ label:nth-of-type(3),
+.content > input:nth-of-type(4):checked ~ label:nth-of-type(4),
+.content > input:nth-of-type(5):checked ~ label:nth-of-type(5){
+	background: url("../images/tab2.png") no-repeat;
+}
+.content > div,
+.content > input{
+	display: none;
+}
+.content > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.content > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.content > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+.content > input:nth-of-type(4):checked ~ div:nth-of-type(4),
+.content > input:nth-of-type(5):checked ~ div:nth-of-type(5){
+	display: block;
+	border: 1px solid #c6c6c4;
+}
+.content p{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.content .other-text{
+	height: 120px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.content img{
+	width: 596px;
+	height: 266px;
+	float: left;
+	margin-right: 10px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+	border: 2px solid rgba(198, 198, 196, 0.5);
+}
+.content .other-photo{
+	width: 169px;
+	height: 169px;
+	float: left;
+	margin-right: 10px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+.content .font-big{
+	font-size: 36px;
+}
+.content .other-font{
+	color: #cc6600;
+}
+.center input{
+	padding: 0;
+	border: none;
+	width: 120px;
+	height: 25px;
+	color: white;
+	font-size: 12px;
+	background: #8e0a13;
+	margin: 0px 0px 25px 20px;
+}
+hr{
+	display: inline-block;
+	margin: auto 20px 14px 20px;
+	background: #a29f9f;
+	height: 1px;
+	border: none;
+	width: 620px;
+}
+.content .button-continue{
+	float: right;
+	margin: 0px 20px 25px 20px;
+}
+
+.content .paginator{
+	display: inline;
+}
+.paginator ul{
+	padding: 0px;
+	margin: 0px 0px 14px 20px; ;
+}
+.paginator li{
+	display: inline-block;
+}
+.paginator a,
+.paginator span{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 20px;
+	color: white;
+	min-width: 16px;
+	text-decoration: none;
+	height: 20px;
+	background: black;
+	padding: 0px 2px 0px 2px;
+}
+.paginator .current {
+    background: #8e0a13;
+}
+.paginator a:hover {
+    color: #dbc3a9;
+}
+.share{
+	position: absolute;
+	right: 288px;
+	width: 110px;
+	height: 40px;
+}
+.social {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+	margin-left: 5px;
+	margin-top: 5px;
+    float: right;
+    border-radius: 5px;
+ }
+.social-fb{
+	background-image: url("../images/sprite.jpg");
+    background-position: -288px -155px;
+}
+
+.social-tw{
+	background-position: -149px -155px;
+	background-image: url("../images/sprite.jpg");
+	
+}
+ .social-vk{
+ 	background-position: -359px -155px;
+  	background-image: url("../images/sprite.jpg");
+}
+.menu{
+	float: right;
+	width: 287px;
+	height: 925px;
+	margin: 0;
+	margin-top: 40px;
+}
+.menu input:nth-child(1){
+	color: black;
+	margin: 0px 0px 15px 17px;
+	width: 230px;
+	height: 20px;
+	background: white;
+	border: 1px solid #c6c6c4;
+}
+.menu input:nth-child(2){
+	float: right;
+	width: 40px;
+	height: 20px;
+	background: none;
+	background-image: url("../images/go.png");
+	background-position: center center;
+	margin: 0px 0px 15px 0px;
+	border-bottom: 1px solid #c6c6c4;
+}
+.menu input:nth-child(2):active{
+	background-image: url("../images/go2.png");
+	border-bottom: 1px solid #c6c6c4;
+}
+.menu .window{
+	display: inline-block;
+	width: 270px;
+	height: 320px;
+	margin: 0px 0px 15px 17px;
+	background-image: url("../images/menu-land.png");
+}
+.menu .block{
+	overflow: hidden;
+	width: 230px;
+	height: 292px;
+	margin: 7px auto 0px auto;
+	border-left: 2px solid #a29f9f;
+	border-right: 2px solid #a29f9f;
+}
+.menu ul{
+	margin: 0px;
+	padding: 0px;
+}
+.menu img{
+	float: left;
+	padding-top: 2px;
+	margin: 4px 10px 4px 20px;
+}
+.menu p{
+	font-size: 14px;
+	margin: 4px 0px 4px 0px;
+}
+.menu li{
+	padding-top:  3px;
+	list-style: none;
+	height: 24px;
+	border-bottom: 1px solid #a29f9f;
+}
+.menu li:before{
+	content: "✢ ";
+}
+footer{
+	margin-top: 125px;
+	width: auto;
+	height: 120px;
+	background-image: url(../images/footer.png);
+}
+.footer{
+	position: relative;
+	height: 120px;
+	margin: 0 auto;
+	width: 950px;
+}
+.footer ul{
+	padding: 0px;
+	position: absolute;
+	top:  50px;
+	list-style: none;
+}
+.footer li{
+	display: inline-block;
+}
+.footer a{
+	font-family: "Caveirada";
+	color: white;
+	text-decoration: none;
+}
+.contact{
+	display: inline-block;
+	margin-top: 40px;
+	width: 200px;
+	height: 60px;
+	float: right;
+}
+.contact .item{
+	height: 30px;
+	position: relative;
+}
+.contact .icon{
+	position: absolute;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	bottom: 0px;
+	background-image: url("../images/sprite2.jpg");
+}
+.contact .geolocation{
+	background-position: -192px 225px;
+}
+.contact .email{
+	background-position: -338px 345px;
+}
+.contact a{
+	position: absolute;
+	bottom: 1px;
+	font-family: Garamond;
+	font-size: 14px;
+	margin-left: 40px;
+}
