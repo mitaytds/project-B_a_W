@@ -171,9 +171,8 @@ header{
 }
 .center{
 	position: relative;
-	margin: 0 auto;
 	width: 950px;
-	margin-top: 122px;
+	margin: 122px auto 0px auto;
 }
 .content div{
 	width: 660px;
@@ -213,21 +212,17 @@ header{
 	border: 1px solid #c6c6c4;
 }
 .content p{
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 12px 20px 12px 20px;
 }
 .content .other-text{
 	height: 120px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 0px 20px 0px 20px;
 }
 .content img{
 	width: 596px;
 	height: 266px;
 	float: left;
-	margin-right: 10px;
-	margin-left: 20px;
-	margin-bottom: 30px;
+	margin: 0px 10px 30px 20px;
 	border: 2px solid rgba(198, 198, 196, 0.5);
 }
 .content .other-photo{
@@ -304,8 +299,7 @@ hr{
 	display: inline-block;
 	width: 30px;
 	height: 30px;
-	margin-left: 5px;
-	margin-top: 5px;
+	margin: 5px 0px 0px 5px;
 	float: right;
 	border-radius: 5px;
 }
@@ -326,8 +320,7 @@ hr{
 	float: right;
 	width: 287px;
 	height: 925px;
-	margin: 0;
-	margin-top: 40px;
+	margin: 40px 0px 0px 0px;
 }
 .menu input:nth-child(1){
 	color: black;
