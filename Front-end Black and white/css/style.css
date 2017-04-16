@@ -17,7 +17,6 @@ body{
  
     /* Фиксируем изображение - оно остается на месте при прокрутке окна */
     background-attachment: fixed;
- 
     /* Изображение будет масштабироваться в зависимости от размеров контейнера */
     background-size: 100%;
 	margin: 0 auto;
@@ -237,9 +236,10 @@ header{
 	width: 169px;
 	height: 169px;
 	float: left;
-	margin-right: 10px;
+	margin: 0px 10px 30px 20px;
+	/*margin-right: 10px;
 	margin-left: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 30px;*/
 }
 .content .font-big{
 	font-size: 36px;
