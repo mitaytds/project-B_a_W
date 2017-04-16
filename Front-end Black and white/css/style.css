@@ -1,7 +1,7 @@
 @font-face {
-    font-family: "Caveirada"; /* Гарнитура шрифта */
-    src: url("../font/vtks caveirada.ttf");
-   }
+	font-family: "Caveirada"; /* Гарнитура шрифта */
+	src: url("../font/vtks caveirada.ttf");
+}
 body{
 	position: relative;
 	width: auto;
@@ -9,16 +9,14 @@ body{
 	color: white;
 	font-family: Garamond, arial;
 	background-image: url("../images/fon.png");
-	/* Центрирование изображения по вертикали и горизонтали всегда */
-    background-position: center center;
- 
-    /* Запрещаем повтор изображения */
-    background-repeat: no-repeat;
- 
-    /* Фиксируем изображение - оно остается на месте при прокрутке окна */
-    background-attachment: fixed;
-    /* Изображение будет масштабироваться в зависимости от размеров контейнера */
-    background-size: 100%;
+/* Центрирование изображения по вертикали и горизонтали всегда */
+	background-position: center center;
+	/* Запрещаем повтор изображения */
+	background-repeat: no-repeat;
+/* Фиксируем изображение - оно остается на месте при прокрутке окна */
+	background-attachment: fixed;
+/* Изображение будет масштабироваться в зависимости от размеров контейнера */
+	background-size: 100%;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -237,9 +235,6 @@ header{
 	height: 169px;
 	float: left;
 	margin: 0px 10px 30px 20px;
-	/*margin-right: 10px;
-	margin-left: 20px;
-	margin-bottom: 30px;*/
 }
 .content .font-big{
 	font-size: 36px;
@@ -294,10 +289,10 @@ hr{
 	padding: 0px 2px 0px 2px;
 }
 .paginator .current {
-    background: #8e0a13;
+	background: #8e0a13;
 }
 .paginator a:hover {
-    color: #dbc3a9;
+	color: #dbc3a9;
 }
 .share{
 	position: absolute;
@@ -306,25 +301,24 @@ hr{
 	height: 40px;
 }
 .social {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
 	margin-left: 5px;
 	margin-top: 5px;
-    float: right;
-    border-radius: 5px;
- }
+	float: right;
+	border-radius: 5px;
+}
 .social-fb{
 	background-image: url("../images/sprite.jpg");
-    background-position: -288px -155px;
+	background-position: -288px -155px;
 }
-
 .social-tw{
 	background-position: -149px -155px;
 	background-image: url("../images/sprite.jpg");
 	
 }
- .social-vk{
+.social-vk{
  	background-position: -359px -155px;
   	background-image: url("../images/sprite.jpg");
 }
