@@ -8,23 +8,23 @@
 	<body>
 		<header>
 			<div class="header">
-				<img src="images/logo.png">
+				<img alt="logo" src="images/logo.png">
 				<p>PhotoTrip</p>
 				<div class="wrap">
-					<a href="#modal-one" class="btn btn-login"><img src="images/login.png">Sing In</a>
+					<a href="#modal-one" class="btn btn-login"><img alt="sing-in button" src="images/login.png">Sing In</a>
 					<a href="#modal-two" class="btn">Sing Up</a>
 				</div>
 				<!-- Модальное окно1 -->
 				<div class="modal" id="modal-one"><!--подложка-->
 					<div class="modal-window">
-					<a href="#close" class="btn btn-close"><img src="images/close.png" ></a> <!-- Изменяем на "#close"-->
-							<form action="" method="get" class="singin">
+					<a href="#close" class="btn btn-close"><img alt="close button" src="images/close.png" ></a> <!-- Изменяем на "#close"-->
+							<form method="get" class="singin">
 								<p>Sing In</p><br>
 								<input type="text" name="login" id="login-field" placeholder="Login*" onfocus="this.placeholder=''">
 								<br><br>
 								<input type="password" name="password" id="password-field" placeholder="Password*" onfocus="this.placeholder=''">
 								<br><br>
-								<label><input type="checkbox" name="">Remember me on this computer</label>
+								<label><input type="checkbox" name="remember_pc">Remember me on this computer</label>
 								<br><br>
 								<a href="#">Forgotten your password?</a>
 								<br><br>
@@ -36,14 +36,14 @@
 					<!-- / Модальное окно1 -->
 				<div class="modal-2" id="modal-two"><!--подложка-->
 					<div class="modal-window-2">
-					<a href="#close" class="btn btn-close"><img src="images/close.png" ></a> <!-- Изменяем на "#close"-->
-							<form action="" method="get" class="singup" id="singup">
+					<a href="#close" class="btn btn-close"><img alt="close button" src="images/close.png" ></a> <!-- Изменяем на "#close"-->
+							<form method="get" class="singup" id="singup">
 								<p>Sing Up</p><br>
 								<input type="text" name="login" id="login-field" placeholder="Login*" onfocus="this.placeholder=''">
 								<br><br>
 								<input type="password" name="password" id="password-field" placeholder="Password*" onfocus="this.placeholder=''">
 								<br><br>
-								<label><input type="checkbox" name="">Remember me on this computer</label>
+								<label><input type="checkbox" name="remember_pc">Remember me on this computer</label>
 								<br><br>
 								<input class="button" type="submit" value="Create an account">
 							</form>
@@ -63,10 +63,10 @@
 					<a class="social social-vk" href="http://vk.com"></a>
 			</div>
 			<div class="menu">
-				<input type="search" name="">
-				<input type="submit" name="" value="Go">
+				<input type="search" name="field_search">
+				<input type="submit" name="button_search" value="Go">
 				<div class="window">
-					<img src="images/arrow.png">
+					<img alt="arrow" src="images/arrow.png">
 					<p>Members List</p>
 					<div class="block">
 						<ul>
@@ -84,7 +84,7 @@
 					</div>
 				</div>
 				<div class="window">
-					<img src="images/arrow.png">
+					<img alt="arrow" src="images/arrow.png">
 					<p>Country</p>
 					<div class="block">
 						<ul>
@@ -104,7 +104,7 @@
 			</div>
 			<div class="content">
 				 <input type="radio" name="odin" checked="checked" id="vkl1"/>
-				 <label style="color: white;" for="">About</label>
+				 <label style="color: white;">About</label>
 				 <div>
 				</div>
 			</div>
