@@ -11,7 +11,7 @@ body{
 	background-image: url("../images/fon.png");
 /* Центрирование изображения по вертикали и горизонтали всегда */
 	background-position: center center;
-	/* Запрещаем повтор изображения */
+/* Запрещаем повтор изображения */
 	background-repeat: no-repeat;
 /* Фиксируем изображение - оно остается на месте при прокрутке окна */
 	background-attachment: fixed;
@@ -21,7 +21,7 @@ body{
 	padding: 0;
 }
 header{
-	width: auto;
+	min-width: 950px;
 	background-image: url("../images/header.png");
 	height: 193px;
 }
@@ -383,7 +383,7 @@ hr{
 }
 footer{
 	margin-top: 125px;
-	width: auto;
+	min-width: 950px;
 	height: 120px;
 	background-image: url(../images/footer.png);
 }
