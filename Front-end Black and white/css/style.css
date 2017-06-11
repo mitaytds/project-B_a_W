@@ -55,11 +55,11 @@ body{
 /* Центрирование изображения по вертикали и горизонтали всегда */
 	background-position: center center;
 /* Запрещаем повтор изображения */
-	background-repeat: repeat-y;
+	background-repeat: no-repeat;
 /* Фиксируем изображение - оно остается на месте при прокрутке окна */
 	background-attachment: fixed;
 /* Изображение будет масштабироваться в зависимости от размеров контейнера */
-	background-size: 100%;
+	background-size: 120%;
 	margin: 0 auto;
 	padding: 0;
 }
