@@ -435,6 +435,7 @@ footer{
 	height: 120px;
 	margin: 0 auto;
 	width: 950px;
+	padding-bottom: auto;
 }
 .footer ul{
 	padding: 0px;
